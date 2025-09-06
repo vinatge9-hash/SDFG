@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Serene Health Clinic - Contact & Appointments</title>
+  <meta name='description' content='Contact Serene Health Clinic to book an appointment, find our location, and learn our opening hours.'>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap' rel='stylesheet'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans text-[#374151]'>
+  <!-- Header -->
+  <header class='bg-white shadow-sm'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-label='Main Navigation'>
+      <div class='flex justify-between h-16'>
+        <div class='flex-shrink-0 flex items-center'>
+          <span class='text-xl font-semibold text-[#374151]'>Serene Health Clinic</span>
+        </div>
+        <div class='hidden md:flex items-center space-x-6'>
+          <a href='index.html' class='text-[#374151] hover:text-[#3B82F6]'>Home</a>
+          <a href='about.html' class='text-[#374151] hover:text-[#3B82F6]'>About</a>
+          <a href='contact.html' class='text-[#374151] hover:text-[#3B82F6]'>Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- CONTACT INFO -->
+    <section class='py-16 bg-white'>
+      <div class='max-w-5xl mx-auto px-6'>
+        <h1 class='text-3xl font-bold text-[#374151] mb-4'>Contact & Appointments</h1>
+        <p class='text-[#374151] mb-6'>Reach Serene Health Clinic for appointments, inquiries, and more.</p>
+        <div class='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          <div>
+            <h2 class='text-xl font-semibold mb-3'>Visit Us</h2>
+            <p class='text-sm'>456 Health St, Nadargul, Telangana, India</p>
+            <p class='text-sm'>Phone: +91-XXXXXXXXXX</p>
+            <p class='text-sm'>Opening Hours: Mon-Fri 9:00 AM – 6:00 PM, Sat 9:00 AM – 1:00 PM</p>
+            <div class='mt-4'>
+              <iframe src='https://maps.google.com/maps?q=456%20Health%20St%20Nadargul%20Telangana%20India&t=&z=15&ie=UTF8&iwloc=&output=embed' width='100%' height='260' style='border:0' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>
+            </div>
+          </div>
+          <div>
+            <h2 class='text-xl font-semibold mb-3'>Book an Appointment</h2>
+            <form class='space-y-4' onsubmit='return false'>
+              <div>
+                <label class='block text-sm mb-1' for='name'>Name</label>
+                <input id='name' name='name' type='text' required class='w-full p-2 rounded border border-gray-300' placeholder='Full Name'>
+              </div>
+              <div>
+                <label class='block text-sm mb-1' for='phone'>Phone Number</label>
+                <input id='phone' name='phone' type='tel' required class='w-full p-2 rounded border border-gray-300' placeholder='+91 98765 43210'>
+              </div>
+              <div>
+                <label class='block text-sm mb-1' for='date'>Preferred Date</label>
+                <input id='date' name='date' type='date' required class='w-full p-2 rounded border border-gray-300'>
+              </div>
+              <div>
+                <label class='block text-sm mb-1' for='reason'>Reason for Visit</label>
+                <select id='reason' name='reason' class='w-full p-2 rounded border border-gray-300'>
+                  <option>General Checkup</option>
+                  <option>Pediatric Consultation</option>
+                  <option>Cardiology Appointment</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <button class='w-full py-2 rounded bg-[#3B82F6] text-white'>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class='bg-[#0f172a] text-white py-12'>
+    <div class='max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h4 class='font-semibold mb-2'>Serene Health Clinic</h4>
+        <p class='text-sm'>456 Health St, Nadargul, Telangana, India</p>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Quick Links</h4>
+        <ul class='text-sm space-y-1'>
+          <li><a href='index.html' class='hover:underline'>Home</a></li>
+          <li><a href='about.html' class='hover:underline'>About</a></li>
+          <li><a href='contact.html' class='hover:underline'>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Newsletter / Health Tips</h4>
+        <p class='text-sm'>Get wellness tips and clinic updates in your inbox.</p>
+        <form class='mt-2' onsubmit='return false'>
+          <input aria-label='Email address' type='email' placeholder='Email address' class='w-full p-2 rounded border border-gray-300'/>
+          <button class='mt-2 w-full py-2 rounded bg-[#3B82F6]'>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class='text-center text-sm mt-6 opacity-70'>© 2025 Serene Health Clinic. All rights reserved.</p>
+  </footer>
+</body>
+</html>
